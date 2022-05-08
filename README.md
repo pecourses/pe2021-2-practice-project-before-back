@@ -30,6 +30,8 @@
 
    - `./start-back-dev.sh`
 
+   (Для Windows: в корне проекта выполнить в терминале `docker-compose --file docker-compose-only-back-dev.yaml up`)
+
 ## Примечания
 
 - При работе приложения в dev-режиме понадобятся данные тестовых банковских карт:
