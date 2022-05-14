@@ -9,6 +9,7 @@ import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import CONSTANTS from '../../constants';
+import ReadyToGetStarted from './ReadyToGetStarted/ReadyToGetStarted';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -257,6 +258,9 @@ const Home = props => {
                 images={carouselConstants.feedbackSliderImages}
                 carouselType={carouselConstants.FEEDBACK_SLIDER}
               />
+            </div>
+            <div className={styles.readyToGetStartedContainer}>
+              <ReadyToGetStarted />
             </div>
           </div>
           <Footer />
