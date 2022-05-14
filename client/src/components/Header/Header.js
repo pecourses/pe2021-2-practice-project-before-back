@@ -83,10 +83,10 @@ class Header extends React.Component {
     }
     return (
       <>
-        <Link to='/login' style={{ textDecoration: 'none' }}>
+        <Link to='/login'>
           <span className={styles.btn}>LOGIN</span>
         </Link>
-        <Link to='/registration' style={{ textDecoration: 'none' }}>
+        <Link to='/registration'>
           <span className={styles.btn}>SIGN UP</span>
         </Link>
       </>
