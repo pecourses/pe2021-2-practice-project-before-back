@@ -10,6 +10,7 @@ import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import CONSTANTS from '../../constants';
 import ReadyToGetStarted from './ReadyToGetStarted/ReadyToGetStarted';
+import AgencyLevel from './AgencyLevel/AgencyLevel';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -251,6 +252,11 @@ const Home = props => {
               <Link className={styles.button__link} to='/dashboard'>
                 DASHBOARD
               </Link>
+            </div>
+            <div className={styles.agencyContainer}>
+              <div className={styles.agencyArticlesContainer}>
+                <AgencyLevel />
+              </div>
             </div>
             <div className={styles.blueContainer}>
               <h2 className={styles.whiteUnderline}>What our customers say</h2>
