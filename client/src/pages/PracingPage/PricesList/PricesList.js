@@ -13,7 +13,9 @@ function PricesList () {
 
       <ul>
         {p.profit.map((pr, i) => (
-          <li key={i}>{pr.body}</li>
+          <li key={i} data-tooltip={pr.tooltip}>
+            {pr.body}
+          </li>
         ))}
       </ul>
       <Link to='#' style={{ backgroundColor: `${p.color}` }}>
